@@ -24,8 +24,9 @@ This file contains a number of front-end interview questions that can be used wh
 
 #### General Questions:
 
-* What did you learn yesterday/this week?
-* What excites or interests you about coding?
+* What did you learn yesterday/this week? 
+* What excites or interests you about coding? 
+⋅⋅*What excites me about coding is being able to take an idea, and make it into reality that will benefit others. I also like overcoming the technical challenges by exercising my problem-solving and reasoning skills. 
 * What is a recent technical challenge you experienced and how did you solve it?
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 * Talk about your preferred development environment.
