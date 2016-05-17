@@ -31,14 +31,18 @@ This file contains a number of front-end interview questions that can be used wh
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 * Talk about your preferred development environment.
 * Which version control systems are you familiar with?
+  * The version control system I am most familiar with it Git 
 * Can you describe your workflow when you create a web page?
+  * Define site goals, develop site structure (site maps and wire frames), design and production, test, collect feedback, and fix bugs. 
 * If you have 5 different stylesheets, how would you best integrate them into the site?
 * Can you describe the difference between progressive enhancement and graceful degradation?
 * How would you optimize a website's assets/resources?
+  * Optimize any images for web, compress and minifiy JavaScript and CSS with build tools such as Grunt or Gulp. 
 * How many resources will a browser download from a given domain at a time?
   * What are the exceptions?
 * Name 3 ways to decrease page load (perceived or actual load time).
 * If you jumped on a project and they used tabs and you used spaces, what would you do?
+  * I would use tabs to keep the code consistent and organized with other areas in the project.
 * Describe how you would create a simple slideshow page.
 * If you could master one technology this year, what would it be?
 * Explain the importance of standards and standards bodies.
@@ -50,12 +54,16 @@ This file contains a number of front-end interview questions that can be used wh
 #### HTML Questions:
 
 * What does a `doctype` do?
+  * <DOCTYPE> ensures that the browser renders the page in standards mode and not in Quirks mode. It also defines what version of (X)HTML the document is using.
 * What's the difference between standards mode and quirks mode?
+  * Standars mode means the browser follows the berhavior of the HTML and CSS specifications. There is less various between browsers in how the page displays. Quirks Mode is when the web browser attempts to render code based on a ‘best-guess’, this includes interpretation of code that may be non-standard or poorly-formed. 
 * What's the difference between HTML and XHTML?
+  * XHTML has stricter standards in syntax, compared to HTML.
 * Are there any problems with serving pages as `application/xhtml+xml`?
 * How do you serve a page with content in multiple languages?
 * What kind of things must you be wary of when design or developing for multilingual sites?
 * What are `data-` attributes good for?
+  * Data attributes allow for extra information to be stored on semantic HTML elements that don't need to have a defined meaning. 
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5?
 * Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
 * Describe the difference between `<script>`, `<script async>` and `<script defer>`.
@@ -66,6 +74,7 @@ This file contains a number of front-end interview questions that can be used wh
 #### CSS Questions:
 
 * What is the difference between classes and ID's in CSS?
+  * ID's have a higher specifiity than classes in CSS 
 * What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 * Describe Floats and how they work.
 * Describe z-index and how stacking context is formed.
