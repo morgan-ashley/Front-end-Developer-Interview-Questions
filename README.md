@@ -56,7 +56,7 @@ This file contains a number of front-end interview questions that can be used wh
 * What does a `doctype` do?
   * <DOCTYPE> ensures that the browser renders the page in standards mode and not in Quirks mode. It also defines what version of (X)HTML the document is using.
 * What's the difference between standards mode and quirks mode?
-  * Standars mode means the browser follows the berhavior of the HTML and CSS specifications. There is less various between browsers in how the page displays. Quirks Mode is when the web browser attempts to render code based on a ‘best-guess’, this includes interpretation of code that may be non-standard or poorly-formed. 
+  ###### H6 Standars mode means the browser follows the berhavior of the HTML and CSS specifications. There is less various between browsers in how the page displays. Quirks Mode is when the web browser attempts to render code based on a ‘best-guess’, this includes interpretation of code that may be non-standard or poorly-formed. 
 * What's the difference between HTML and XHTML?
   * XHTML has stricter standards in syntax, compared to HTML.
 * Are there any problems with serving pages as `application/xhtml+xml`?
