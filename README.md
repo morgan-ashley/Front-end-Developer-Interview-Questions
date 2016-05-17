@@ -56,7 +56,7 @@ This file contains a number of front-end interview questions that can be used wh
 * What does a `doctype` do?
   * <DOCTYPE> ensures that the browser renders the page in standards mode and not in Quirks mode. It also defines what version of (X)HTML the document is using.
 * What's the difference between standards mode and quirks mode?
-  ###### H6 Standars mode means the browser follows the berhavior of the HTML and CSS specifications. There is less various between browsers in how the page displays. Quirks Mode is when the web browser attempts to render code based on a ‘best-guess’, this includes interpretation of code that may be non-standard or poorly-formed. 
+  * Standars mode means the browser follows the berhavior of the HTML and CSS specifications. There is less various between browsers in how the page displays. Quirks Mode is when the web browser attempts to render code based on a ‘best-guess’, this includes interpretation of code that may be non-standard or poorly-formed. 
 * What's the difference between HTML and XHTML?
   * XHTML has stricter standards in syntax, compared to HTML.
 * Are there any problems with serving pages as `application/xhtml+xml`?
@@ -98,10 +98,13 @@ This file contains a number of front-end interview questions that can be used wh
   * I would create a separate style sheet when a user wants to print the page
 * What are some of the "gotchas" for writing efficient CSS?
 * What are the advantages/disadvantages of using CSS preprocessors?
-  * Describe what you like and dislike about the CSS preprocessors you have used.
+  * Advantages to CSS preprocessors is that it is quicker to write CSS. Preprocessors are also intuitive and flexible. Disadvantages are; debugging is difficult, performance can be compromised, harder to maintain.
+* Describe what you like and dislike about the CSS preprocessors you have used.
 * How would you implement a web design comp that uses non-standard fonts?
 * Explain how a browser determines what elements match a CSS selector.
+  * Broswers match elements with class selectors by reading from left to right, just like us! 
 * Describe pseudo-elements and discuss what they are used for. 
+  * Psuedo-elements are way to address sub-parts of elements. They allow you to set style on a part of an element's content beyond what is specified in the documents. Psuedo-elements use is popular with typographical effects (initials cap and drop caps). 
 * Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
 * What does ```* { box-sizing: border-box; }``` do? What are its advantages?
 * List as many values for the display property that you can remember.
@@ -124,7 +127,9 @@ This file contains a number of front-end interview questions that can be used wh
   * Prototypal inheritance works by trying to access a property of an object If the property isn't immediately found, the property will not only be sought on the object but on the prototype of the object, the prototype of the prototype, and so on until either a property with a matching name is found or the end of the prototype chain is reached.
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-  * What needs to be changed to properly make it an IIFE?
+  * The grammar is wrong. This is a function declaration 
+* What needs to be changed to properly make it an IIFE?
+  * `(function foo(){ }();`.
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
   * How would you go about checking for any of these states?
 * What is a closure, and how/why would you use one?
