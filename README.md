@@ -77,19 +77,25 @@ This file contains a number of front-end interview questions that can be used wh
   * ID's have a higher specifiity than classes in CSS 
 * What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 * Describe Floats and how they work.
+ * Float can be used to wrap text around images. When you float an element it becomes a block box, you can only float elements to the left or to the right. 
 * Describe z-index and how stacking context is formed.
-* Describe BFC(Block Formatting Context) and how it works.
+  * Stacking context is formed by positioning and assigning a z-index value to an HTML element.
+* Describe BFC(Block Formatting Context) and how it works.  
+  * BFC is part of the visual CSS rendering of a web page in which block boxes are laid out. Floats, absolutely positioned elements, inline-blocks, table-cells, table-captions, and elements with ‘overflow’ other than ‘visible’ establish new block formatting contexts
 * What are the various clearing techniques and which is appropriate for what context?
 * Explain CSS sprites, and how you would implement them on a page or site.
 * What are your favourite image replacement techniques and which do you use when?
+  * My favorite image replacement technique right now is https://placekitten.com/ 
 * How would you approach fixing browser-specific styling issues?
 * How do you serve your pages for feature-constrained browsers?
   * What techniques/processes do you use?
 * What are the different ways to visually hide content (and make it available only for screen readers)?
 * Have you ever used a grid system, and if so, what do you prefer?
 * Have you used or implemented media queries or mobile specific layouts/CSS?
+  * Yes, I have!  
 * Are you familiar with styling SVG?
 * How do you optimize your webpages for print?
+  * I would create a separate style sheet when a user wants to print the page
 * What are some of the "gotchas" for writing efficient CSS?
 * What are the advantages/disadvantages of using CSS preprocessors?
   * Describe what you like and dislike about the CSS preprocessors you have used.
@@ -111,8 +117,11 @@ This file contains a number of front-end interview questions that can be used wh
 #### JS Questions:
 
 * Explain event delegation
+  * Event delegation works by assigning a single event handler to a parent element, so multiple event handlers dont't need to be assigned to the child elements
 * Explain how `this` works in JavaScript
+  * 'this' holds a reference to the global object (server-side) or a reference to the window (client-side) and remains there until is a reason for its context to change. 
 * Explain how prototypal inheritance works
+  * Prototypal inheritance works by trying to access a property of an object If the property isn't immediately found, the property will not only be sought on the object but on the prototype of the object, the prototype of the prototype, and so on until either a property with a matching name is found or the end of the prototype chain is reached.
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
   * What needs to be changed to properly make it an IIFE?
