@@ -7,8 +7,8 @@ This file contains a number of front-end interview questions that can be used wh
 ## Table of Contents
 
   1. [General Questions](#general-questions)
-  1. [HTML Questions](#html-questions)
-  1. [CSS Questions](#css-questions)
+  1. [HTML Questions](#HTML-questions)
+  1. [CSS Questions](#CSS-questions)
   1. [JS Questions](#js-questions)
   1. [Testing Questions](#testing-questions)
   1. [Performance Questions](#performance-questions)
@@ -37,7 +37,7 @@ This file contains a number of front-end interview questions that can be used wh
 * If you have 5 different stylesheets, how would you best integrate them into the site?
 * Can you describe the difference between progressive enhancement and graceful degradation?
 * How would you optimize a website's assets/resources?
-  * Optimize any images for web, compress and minifiy JavaScript and CSS with build tools such as Grunt or Gulp. 
+  * Optimize any images for web, compress and minify JavaScript and CSS with build tools such as Grunt or Gulp. 
 * How many resources will a browser download from a given domain at a time?
   * What are the exceptions?
 * Name 3 ways to decrease page load (perceived or actual load time).
@@ -56,10 +56,10 @@ This file contains a number of front-end interview questions that can be used wh
 * What does a `doctype` do?
   * <DOCTYPE> ensures that the browser renders the page in standards mode and not in Quirks mode. It also defines what version of (X)HTML the document is using.
 * What's the difference between standards mode and quirks mode?
-  * Standars mode means the browser follows the berhavior of the HTML and CSS specifications. There is less various between browsers in how the page displays. Quirks Mode is when the web browser attempts to render code based on a ‘best-guess’, this includes interpretation of code that may be non-standard or poorly-formed. 
+  * Standard mode means the browser follows the behavior of the HTML and CSS specifications. There is less various between browsers in how the page displays. Quirks Mode is when the web browser attempts to render code based on a &#145;best-guess&#146;, this includes interpretation of code that may be non-standard or poorly-formed. 
 * What's the difference between HTML and XHTML?
   * XHTML has stricter standards in syntax, compared to HTML.
-* Are there any problems with serving pages as `application/xhtml+xml`?
+* Are there any problems with serving pages as `application/XHTML+XML`?
 * How do you serve a page with content in multiple languages?
 * What kind of things must you be wary of when design or developing for multilingual sites?
 * What are `data-` attributes good for?
@@ -74,17 +74,17 @@ This file contains a number of front-end interview questions that can be used wh
 #### CSS Questions:
 
 * What is the difference between classes and ID's in CSS?
-  * ID's have a higher specifiity than classes in CSS 
+  * ID's have a higher specificity than classes in CSS 
 * What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 * Describe Floats and how they work.
  * Float can be used to wrap text around images. When you float an element it becomes a block box, you can only float elements to the left or to the right. 
 * Describe z-index and how stacking context is formed.
   * Stacking context is formed by positioning and assigning a z-index value to an HTML element.
 * Describe BFC(Block Formatting Context) and how it works.  
-  * BFC is part of the visual CSS rendering of a web page in which block boxes are laid out. Floats, absolutely positioned elements, inline-blocks, table-cells, table-captions, and elements with ‘overflow’ other than ‘visible’ establish new block formatting contexts
+  * BFC is part of the visual CSS rendering of a web page in which block boxes are laid out. Floats, absolutely positioned elements, inline-blocks, table-cells, table-captions, and elements with &#145;overflow&#146; other than &#145;visible&#146; establish new block formatting contexts
 * What are the various clearing techniques and which is appropriate for what context?
 * Explain CSS sprites, and how you would implement them on a page or site.
-* What are your favourite image replacement techniques and which do you use when?
+* What are your favorite image replacement techniques and which do you use when?
   * My favorite image replacement technique right now is https://placekitten.com/ 
 * How would you approach fixing browser-specific styling issues?
 * How do you serve your pages for feature-constrained browsers?
@@ -104,7 +104,7 @@ This file contains a number of front-end interview questions that can be used wh
 * Explain how a browser determines what elements match a CSS selector.
   * Broswers match elements with class selectors by reading from left to right, just like us! 
 * Describe pseudo-elements and discuss what they are used for. 
-  * Psuedo-elements are way to address sub-parts of elements. They allow you to set style on a part of an element's content beyond what is specified in the documents. Psuedo-elements use is popular with typographical effects (initials cap and drop caps). 
+  * Pseudo-elements are way to address sub-parts of elements. They allow you to set style on a part of an element's content beyond what is specified in the documents. Pseudo-elements use is popular with typographical effects (initials cap and drop caps). 
 * Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
 * What does ```* { box-sizing: border-box; }``` do? What are its advantages?
 * List as many values for the display property that you can remember.
@@ -120,7 +120,7 @@ This file contains a number of front-end interview questions that can be used wh
 #### JS Questions:
 
 * Explain event delegation
-  * Event delegation works by assigning a single event handler to a parent element, so multiple event handlers dont't need to be assigned to the child elements
+  * Event delegation works by assigning a single event handler to a parent element, so multiple event handlers don't need to be assigned to the child elements
 * Explain how `this` works in JavaScript
   * 'this' holds a reference to the global object (server-side) or a reference to the window (client-side) and remains there until is a reason for its context to change. 
 * Explain how prototypal inheritance works
@@ -131,7 +131,9 @@ This file contains a number of front-end interview questions that can be used wh
 * What needs to be changed to properly make it an IIFE?
   * `(function foo(){ }();`.
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
-  * How would you go about checking for any of these states?
+  *  `undefined` means a variable has not yet been declared or assigned to a value. `null` is an assignment value and can be assigned to a variable as a representation with no value. A variable is undeclared when it does not use the var keyword. It gets created on the global object (that is, the window), thus it operates in a different space as the declared variables.
+* How would you go about checking for any of these states?
+  * I would check to see it variables were `undefined`, `null`, or undeclared by using console.log in Developer Tools 
 * What is a closure, and how/why would you use one?
 * What's a typical use case for anonymous functions?
 * How do you organize your code? (module pattern, classical inheritance?)
@@ -157,7 +159,9 @@ This file contains a number of front-end interview questions that can be used wh
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
 * Why is it called a Ternary expression, what does the word "Ternary" indicate?
+  * The Ternary expression is shorthand for an if statement. The word "Ternary" indicates the ? in the if statement 
 * What is `"use strict";`? what are the advantages and disadvantages to using it?
+  * `"use strict";`...
 * Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
 * Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
 * Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
