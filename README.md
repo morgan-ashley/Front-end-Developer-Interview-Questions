@@ -184,6 +184,7 @@ duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 * What are some advantages/disadvantages to testing your code?
 * What tools would you use to test your code's functionality?
 * What is the difference between a unit test and a functional/integration test?
+  * A unit test is a test written by the programmer to verify that a relatively small piece of code is doing what it is intended to do. An integration test is done to demonstrate that different pieces of the system work together. Integration tests cover whole applications, and they require much more effort to put together
 * What is the purpose of a code style linting tool?
 
 #### Performance Questions:
