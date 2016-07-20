@@ -221,6 +221,20 @@ add(2, 5); // 7
 add(2)(5); // 7
 ```
 
+*ANSWER: 
+```javascript
+function add(x, y) {
+     if (typeof y === "undefined") { // partial
+        return function (y) {
+              return x + y;
+        };
+     }
+   // full application
+   return x + y;
+}  
+add(2, 5);
+```
+
 *Question: What value is returned from the following statement?*
 ```javascript
 "i'm a lasagna hog".split("").reverse().join("");
